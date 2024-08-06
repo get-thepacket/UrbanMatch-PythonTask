@@ -18,3 +18,7 @@ class User(UserBase):
     class Config:
         orm_mode = True
 
+class UserUpdate(BaseModel):
+    age: int
+    gender: str
+    interests: List[str]
